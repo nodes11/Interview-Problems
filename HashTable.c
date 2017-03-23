@@ -24,7 +24,7 @@ void add(uint32_t key, char *value)
 	char value_str[64];
 	int hash_index = key % HASH_PRIME;
 	strcpy(value_str, value);
-    table[hash_index] = (char *)malloc(BUFFER_SIZE * sizeof(char));
+   	table[hash_index] = (char *)malloc(BUFFER_SIZE * sizeof(char));
 	strcpy(table[hash_index],value);
 }
 
